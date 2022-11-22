@@ -1,3 +1,5 @@
+import readline from "readline";
+
 function isInputValid(input) {
     const inputRegex = /^(\d*)$/;  
     if (String(input).trim().match(inputRegex) === null) {
@@ -23,12 +25,12 @@ const area = function (sideLength) {
     return multiply(sideLength, sideLength);
 };
 
-const readline = require('readline').createInterface({
+const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
 });
 
-readline.question('Write one side length number between 1 and 1000: ', oneSideLength => {
+rl.question('Write one side length number between 1 and 1000: ', oneSideLength => {
     if (isInputValid(oneSideLength) === false) {
         console.log("Wrong input, should be a one side length number between 1 and 1000.");
     } else {
@@ -36,5 +38,5 @@ readline.question('Write one side length number between 1 and 1000: ', oneSideLe
         console.log(`Area: ${area(oneSideLength)}`);
     }
 
-    readline.close();
+    rl.close();
 });

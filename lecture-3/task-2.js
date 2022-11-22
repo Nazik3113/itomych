@@ -1,3 +1,5 @@
+import readline from "readline";
+
 function isInputValid(input) {
     const inputRegex = /^([MDCLXVI]*)(\s{0,1}\+\s{0,1})([MDCLXVI]*)$/;
     if (input.trim().match(inputRegex) === null) {
@@ -82,12 +84,12 @@ function arabicToRoman(arabic) {
     return roman;
 }
 
-const readline = require('readline').createInterface({
+const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
 });
 
-readline.question('Add two roman numbers: \n', input => {
+rl.question('Add two roman numbers: \n', input => {
     if (isInputValid(input) === false) {
         console.log("Wrong input, should be two roman numbers and a plus between them.");
     } else {
@@ -99,5 +101,5 @@ readline.question('Add two roman numbers: \n', input => {
         console.log(arabicToRoman(arabicOne + arabicTwo));
     }
 
-    readline.close();
+    rl.close();
 });

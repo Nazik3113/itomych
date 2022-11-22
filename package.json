@@ -1,0 +1,19 @@
+{
+  "name": "itomych_homeworks",
+  "version": "1.0.0",
+  "description": "Homeworks for ITOMYSH course.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nazik3113/itomych.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nazik3113/itomych/issues"
+  },
+  "homepage": "https://github.com/Nazik3113/itomych#readme"
+}
