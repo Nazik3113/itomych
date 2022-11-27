@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "task_1": "npx ts-node task-1.ts"
+    "task_1": "npx ts-node task-1-2.ts",
+    "task_2": "npx ts-node task-1.ts"
   },
   "keywords": [],
   "author": "",
